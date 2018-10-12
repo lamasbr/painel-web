@@ -64,7 +64,8 @@
     .clock
         position: fixed
         bottom: 4vh
-        right: 3vw
+        right: 1.5vw
+        text-align: center
 
         .time
             span
@@ -73,12 +74,13 @@
             span.hours
                 font-weight: bold
 
+            span.minutes
+                font-weight: bold
+                
             span.seconds
-                font-style: italic
+                font-weight: bold
 
         .date
-            text-align: right
-
             span
                 font-size: 2vw
                 font-weight: bold
