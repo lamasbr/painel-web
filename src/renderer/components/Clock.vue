@@ -65,11 +65,12 @@
                 return moment(this.date).format('ss')
             },
             formattedDate() {
-                return moment(this.date).format(this.dateFormat)
+                moment.locale('pt-br')
+                return moment(this.date).format('LL')
             }
         },
         created() {
-            moment.locale(this.locale)
+            moment.locale('pt-br')
             setInterval(() => this.date = new Date(), 1000)
         }
     }
